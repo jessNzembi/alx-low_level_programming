@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * swap_int - swaps the value of 2 integers
@@ -7,7 +8,7 @@
  * Return: empty
  */
 
-void reset_to_98(int *n)
+void swap_int(int *a, int *b)
 {
 	int temp = *a;
 	*a = *b;
