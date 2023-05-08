@@ -10,8 +10,8 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n;
-	int r = 0;
+	unsigned int n = 0;
+	int r;
 
 	while (*s)
 	{
