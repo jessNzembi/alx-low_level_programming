@@ -11,7 +11,7 @@
 int main(int argc, char **argv)
 {
 	int sum = 0;
-	int i, ret;
+	int i;
 
 	if (argc > 1)
 	{
@@ -20,7 +20,6 @@ int main(int argc, char **argv)
 			if (*argv[i] >= 48 && *argv[i] <= 57)
 			{
 				sum += atoi(argv[i]);
-				ret = 0;
 			}
 			else
 			{
@@ -33,7 +32,6 @@ int main(int argc, char **argv)
 	else
 	{
 		printf("0\n");
-		ret = 0;
 	}
-	return (ret);
+	return (0);
 }
