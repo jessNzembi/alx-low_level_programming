@@ -14,7 +14,7 @@ char *_strdup(char *str)
 	char *ptr;
 
 	size = strlen(str) + 1;
-	if (str == NULL)
+	if (*str == '\0')
 	{
 		return (NULL);
 	}
