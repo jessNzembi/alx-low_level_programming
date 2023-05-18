@@ -3,7 +3,7 @@
 
 /**
  * malloc_checked - allocates memory using malloc
- * @b - size
+ * @b: size
  * Return: void
  */
 
