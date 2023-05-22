@@ -1,6 +1,8 @@
 #include "dog.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
+#include <string.h>
 
 /**
  * init_dog - initializes struct dog
@@ -13,7 +15,9 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d->name = name;
+	if (!d || !name || !owner || isnan(age))
+		return;
+	d->name = strdup(name);
 	d->age = age;
-	d->owner = owner;
+	d->owner = strdup(owner);
 }
