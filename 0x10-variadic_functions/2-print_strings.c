@@ -13,13 +13,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list ptr;
+	char *string;
 
-	if (n == 0)
-		return;
 	va_start(ptr, n);
+
 	for (i = 0; i < n; i++)
 	{
-		const char *string = va_arg(ptr, const char *);
+		string = va_arg(ptr, char *);
 
 		if (string == NULL)
 		{
