@@ -8,8 +8,9 @@
  */
 size_t free_listint_safe(listint_t **head)
 {
-	size_t n, count = 0;
+	size_t count = 0;
 	listint_t *temp;
+	int n;
 
 
 	if (!head || !*head)
