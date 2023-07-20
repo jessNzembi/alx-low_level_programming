@@ -8,10 +8,10 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	const dlistint_t *head = malloc(sizeof(dlistint_t));
+	const dlistint_t *head;
 	size_t count = 0;
 
-	if (!h || !head)
+	if (!h)
 		return (0);
 	head = h;
 	while (head)
@@ -20,6 +20,5 @@ size_t print_dlistint(const dlistint_t *h)
 		count++;
 		head = head->next;
 	}
-	free((void *)head);
 	return (count);
 }
